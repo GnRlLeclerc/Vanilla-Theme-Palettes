@@ -1,0 +1,14 @@
+@use "dark/nord.scss";
+
+.theme-dark {
+  // Header colors
+  // They follow the rainbow order, starting from the darkest color
+  --h1-color: var(--purple);
+  --h2-color: var(--blue);
+  --h3-color: var(--green);
+  --h4-color: var(--yellow);
+  --h5-color: var(--orange);
+  --h6-color: var(--red);
+}
+
+// TODO : light schemes

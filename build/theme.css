@@ -1,5 +1,33 @@
 .theme-dark.color-scheme-nord {
-  --background-primary: red;
+  --black: #2e3440;
+  --dark_gray: #3b4252;
+  --gray: #434c5e;
+  --light_gray: #4c566a;
+  --light_gray_bright: #616e88;
+  --darkest_white: #d8dee9;
+  --darker_white: #e5e9f0;
+  --white: #eceff4;
+  --teal: #8fbcbb;
+  --off_blue: #88c0d0;
+  --glacier: #81a1c1;
+  --blue: #5e81ac;
+  --red: #bf616a;
+  --orange: #d08770;
+  --yellow: #ebcb8b;
+  --green: #a3be8c;
+  --purple: #b48ead;
+  --background-primary: var(--black);
+  --background-secondary: var(--black);
+  --titlebar-background: var(--black);
+}
+
+.theme-dark {
+  --h1-color: var(--purple);
+  --h2-color: var(--blue);
+  --h3-color: var(--green);
+  --h4-color: var(--yellow);
+  --h5-color: var(--orange);
+  --h6-color: var(--red);
 }
 
 /* @settings
