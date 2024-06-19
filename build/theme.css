@@ -1,0 +1,24 @@
+.theme-dark.color-scheme-nord {
+  --background-primary: red;
+}
+
+/* @settings
+
+name: Chameleon Theme
+id: obsidian-chameleon-theme
+settings:
+    -
+        id: color-schemes-light
+        title: Light Color Scheme
+        description: Light Color Scheme picker
+        type: class-select
+        allowEmpty: false
+        default: color-scheme-nord
+        options:
+            -
+                label: Nord
+                value: color-scheme-nord
+            -   
+                label: Solarized Light
+                value: color-scheme-solarized-light
+*/

@@ -1,0 +1,3 @@
+# Intermediary compilation output
+build/*
+!build/theme.css
