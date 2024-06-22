@@ -1,26 +1,41 @@
 @use "dark/nord.scss";
 
 .theme-dark {
+  --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+
   // UI navigation colors
 
   // Titlebar background & others
-  --titlebar-background: var(--background-primary);
-  --titlebar-background-focused: var(--background-secondary);
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--border-color-primary);
   --modal-background: var(--background-secondary);
 
   --border-color: var(--border-color-primary);
   --modal-border-color: var(--border-color-primary);
   --prompt-border-color: var(--border-color-primary);
+  --background-modifier-form-field: var(--background-secondary);
+
+  // Interactive UI elements
+  --interactive-normal: var(--background-secondary);
+  --interactive-hover: var(--border-color-primary);
+  --interactive-accent: var(--accent);
+
+  // Generic UI element
+  --background-modifier-hover: var(--selection-background-color);
+  --background-modifier-active-hover: red;
+  --background-modifier-border: var(--border-color-primary);
+  --background-modifier-border-focus: var(--border-color-secondary);
+  --background-modifier-border-hover: var(--border-color-secondary);
 
   // File navigation
   --nav-item-color: var(--text-color);
-  --nav-item-color-active: var(--background-secondary);
+  --nav-item-color-active: var(--text-color-accent);
   --nav-item-color-hover: var(--text-color-accent);
   --nav-item-color-selected: red;
   --nav-item-color-highlighted: var(--accent-color-light);
 
   --nav-item-background-hover: var(--selection-background-color);
-  --nav-item-background-active: var(--accent-color-hover);
+  --nav-item-background-active: var(--accent-color-dark);
   --nav-item-background-selected: red;
 
   // Tabs
@@ -29,7 +44,7 @@
   --tab-text-color-focused-active: var(--text-color);
   --tab-text-color-focused-active-current: var(--text-color-accent);
   --tab-divider-color: var(--selection-background-color);
-  --tab-outline-color: var(--background-secondary);
+  --tab-outline-color: var(--border-color-primary);
   --tab-text-color: var(--border-color-primary);
   --tab-text-color-active: var(--text-color);
   --tab-text-color-focused-highlighted: red;
@@ -38,15 +53,28 @@
 
   // Header colors
   // They follow the rainbow order, starting from the darkest color
-  --h1-color: var(--purple);
-  --h2-color: var(--blue);
-  --h3-color: var(--green);
-  --h4-color: var(--yellow);
-  --h5-color: var(--orange);
-  --h6-color: var(--red);
+  --h1-color: var(--color-purple);
+  --h2-color: var(--color-blue);
+  --h3-color: var(--color-green);
+  --h4-color: var(--color-yellow);
+  --h5-color: var(--color-orange);
+  --h6-color: var(--color-red);
 
   // Text
   --text-normal: var(--text-color);
+  --text-muted: var(--text-color); // UI symbols
+  --checklist-done-color: var(--text-color-muted); // Actual muted text
+  --text-faint: var(--text-color-muted);
+  --text-on-accent: var(--text-color-accent);
+  --text-on-accent-inverted: var(--background-primary);
+  --text-accent: var(--accent);
+  --text-accent-hover: red;
+  --text-highlight-bg: var(--accent);
+
+  --text-success: var(--color-green);
+  --text-warning: var(--color-yellow);
+  --text-error: var(--color-red);
+
   --italic-color: var(--accent-color-light);
   --bold-color: var(--accent-color-light);
   --text-selection: var(--selection-background-color);
@@ -73,6 +101,8 @@
   --nav-collapse-icon-color-collapsed: var(--border-color-secondary);
 
   // UI element colors
+
+  // Icons: default to text color
 
   // Checkbox colors
   --checkbox-color: var(--accent-color-dark);
@@ -104,6 +134,19 @@
   // Properties
   --metadata-label-text-color: var(--text-color);
   --metadata-input-text-color: var(--text-color);
+
+  // Plugins
+
+  // Graph
+  --graph-text: var(--text-color);
+  --graph-line: var(--border-color-secondary);
+  --graph-node: var(--accent);
+  --graph-node-unresolved: var(--border-color-primary);
+  --graph-node-focused: var(--accent-color-hover);
+  --graph-node-tag: var(--accent-color-light);
+  --graph-node-attachment: var(--accent-color-dark);
+
+  // Search: inherits correct colors
 }
 
 // TODO : light schemes

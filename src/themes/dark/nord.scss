@@ -13,14 +13,15 @@
   --off-blue: #88c0d0;
   --glacier: #81a1c1;
 
-  // Basic colors
-  // TODO: integrate better with Obsidian color variables
-  --blue: #5e81ac;
-  --red: #bf616a;
-  --orange: #d08770;
-  --yellow: #ebcb8b;
-  --green: #a3be8c;
-  --purple: #b48ead;
+  // Obsidian colors
+  --color-red: #bf616a;
+  --color-orange: #d08770;
+  --color-yellow: #ebcb8b;
+  --color-green: #a3be8c;
+  --color-cyan: #88c0d0; // Off-blue
+  --color-blue: #5e81ac;
+  --color-purple: #b48ead;
+  --color-pink: pink;
 
   // Background colors
   --background-primary: var(--black);
@@ -35,12 +36,18 @@
   // Text colors
   --text-color: var(--darkest-white);
   --text-color-accent: var(--white);
-  // TODO: text color muted
+  --text-color-muted: var(--light-gray-bright);
 
   // Main accent colors
   --accent-color-dark: var(--glacier);
   --accent-color-light: var(--teal);
   --accent-color-hover: var(--off-blue);
+
+  // Obsidian accent color HSL (glacier)
+  --accent-h: 210;
+  --accent-s: 34%;
+  --accent-l: 63%;
+  --canvas-color: 129, 161, 193 !important;
 
   // Code section theme
 
@@ -48,13 +55,13 @@
 
   --code-normal: var(--white);
   --code-comment: var(--light-gray-bright);
-  --code-function: var(--blue);
-  --code-important: var(--yellow);
-  --code-keyword: var(--teal);
+  --code-function: var(--color-blue);
+  --code-important: var(--color-yellow);
+  --code-keyword: var(--color-cyan);
   --code-operator: var(--glacier);
   --code-property: var(--white);
-  --code-punctuation: red;
-  --code-string: var(--green);
+  --code-punctuation: var(--text-color);
+  --code-string: var(--color-green);
   --code-tag: red;
   --code-value: var(--glacier);
 }
