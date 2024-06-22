@@ -1,6 +1,41 @@
 @use "dark/nord.scss";
 
 .theme-dark {
+  // UI navigation colors
+
+  // Titlebar background & others
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-secondary);
+  --modal-background: var(--background-secondary);
+
+  --border-color: var(--border-color-primary);
+  --modal-border-color: var(--border-color-primary);
+  --prompt-border-color: var(--border-color-primary);
+
+  // File navigation
+  --nav-item-color: var(--text-color);
+  --nav-item-color-active: var(--background-secondary);
+  --nav-item-color-hover: var(--text-color-accent);
+  --nav-item-color-selected: red;
+  --nav-item-color-highlighted: var(--accent-color-light);
+
+  --nav-item-background-hover: var(--selection-background-color);
+  --nav-item-background-active: var(--accent-color-hover);
+  --nav-item-background-selected: red;
+
+  // Tabs
+  --tab-background-active: var(--background-primary);
+  --tab-text-color-focused: var(--text-color);
+  --tab-text-color-focused-active: var(--text-color);
+  --tab-text-color-focused-active-current: var(--text-color-accent);
+  --tab-divider-color: var(--selection-background-color);
+  --tab-outline-color: var(--background-secondary);
+  --tab-text-color: var(--border-color-primary);
+  --tab-text-color-active: var(--text-color);
+  --tab-text-color-focused-highlighted: red;
+
+  // Text element colors
+
   // Header colors
   // They follow the rainbow order, starting from the darkest color
   --h1-color: var(--purple);
@@ -9,6 +44,66 @@
   --h4-color: var(--yellow);
   --h5-color: var(--orange);
   --h6-color: var(--red);
+
+  // Text
+  --text-normal: var(--text-color);
+  --italic-color: var(--accent-color-light);
+  --bold-color: var(--accent-color-light);
+  --text-selection: var(--selection-background-color);
+
+  // Lists, blockquotes & other elements
+  --list-marker-color: var(--accent-color-dark);
+  --blockquote-border-color: var(--accent-color-dark);
+  --hr-color: var(--background-secondary); // Horizontal delimiter
+  --indentation-guide-color: var(--background-secondary);
+  --indentation-guide-color-active: var(--border-color-primary);
+
+  // Links
+  --link-color: var(--accent-color-dark);
+  --link-external-color: var(--accent-color-dark);
+  --link-unresolved-color: var(--red);
+
+  --link-color-hover: var(--accent-color-hover);
+  --link-external-color-hover: var(--accent-color-hover);
+  --link-unresolved-color-hover: var(--red);
+
+  // Indentation guides
+  --nav-indentation-guide-color: var(--border-color-secondary);
+  --nav-collapse-icon-color: var(--border-color-secondary);
+  --nav-collapse-icon-color-collapsed: var(--border-color-secondary);
+
+  // UI element colors
+
+  // Checkbox colors
+  --checkbox-color: var(--accent-color-dark);
+  --checkbox-color-hover: var(--accent-color-hover);
+  --checkbox-border-color: var(--accent-color-dark);
+  --checkbox-border-color-hover: var(--accent-color-hover);
+
+  // Sliders
+  --slider-track-background: var(--background-secondary);
+  --slider-thumb-border-color: var(--black);
+
+  // Tables
+  --table-header-color: var(--text-color);
+  --table-border-color: var(--border-color-primary);
+  --table-selection: var(--selection-background-color);
+  --table-selection-border-color: var(--selection-border-color);
+  --table-drag-handle-color: var(--selection-background-color);
+  --table-drag-handle-color-active: var(--selection-background-color);
+
+  // Tags
+  --tag-color: var(--accent-color-dark);
+  --tag-color-hover: var(--accent-color-dark);
+  --tag-background: var(--background-secondary);
+  --tag-background-hover: var(--border-color-primary);
+
+  // Toggles
+  --toggle-thumb-color: var(--text-color-accent);
+
+  // Properties
+  --metadata-label-text-color: var(--text-color);
+  --metadata-input-text-color: var(--text-color);
 }
 
 // TODO : light schemes
