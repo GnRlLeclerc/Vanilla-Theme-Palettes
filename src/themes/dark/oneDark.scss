@@ -1,0 +1,65 @@
+// Nord color scheme
+.theme-dark.color-scheme-one-dark {
+  // Atom One Dark color palette
+  --black: #181a1f;
+  --darkest-gray: #21252b;
+  --bg0: #282c34;
+  --bg1: #31353f;
+  --bg2: #393f4a;
+  --bg3: #3b3f4c;
+  --bg-blue: #73b8f1;
+  --bg-yellow: #ebd09c;
+  --foreground: #abb2bf;
+
+  --grey: #5c6370;
+  --light-grey: #848b98;
+
+  // Obsidian colors
+  --color-red: #e86671;
+  --color-orange: #d19a66;
+  --color-yellow: #e5c07b;
+  --color-green: #98c379;
+  --color-cyan: #56b6c2;
+  --color-blue: #61afef;
+  --color-purple: #c678dd;
+  --color-pink: pink;
+
+  // Background colors
+  --background-primary: var(--bg0);
+  --background-secondary: var(--darkest-gray);
+  --selection-background-color: var(--bg3);
+
+  // Border colors
+  --border-color-primary: var(--bg2);
+  --border-color-secondary: var(--bg1);
+
+  // Text colors
+  --text-color: var(--foreground);
+  --text-color-accent: white;
+  --text-color-muted-dark: var(--bg2); // Separators, indent
+  --text-color-muted-light: var(--grey); // Checklist done, indent
+
+  // Main accent colors
+  --accent-color-dark: var(--color-blue);
+  --accent-color-light: var(--color-cyan);
+  --accent-color-hover: var(--bg-blue);
+
+  // Obsidian accent color HSL (blue)
+  --accent-h: 207;
+  --accent-s: 82%;
+  --accent-l: 66%;
+  --canvas-color: 97, 175, 239 !important;
+
+  // Code section theme
+  --code-normal: var(--text-color);
+  --code-comment: var(--grey);
+  --code-function: var(--color-blue);
+  --code-important: var(--color-yellow);
+  --code-keyword: var(--color-purple);
+  --code-operator: var(--color-cyan);
+  --code-property: var(--text-color);
+  --code-punctuation: var(--text-color);
+  --code-string: var(--color-green);
+  --code-tag: red;
+  --code-value: var(--color-orange);
+}

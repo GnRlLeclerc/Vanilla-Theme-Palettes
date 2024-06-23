@@ -23,10 +23,10 @@
   --selection-background-color: var(--light-gray);
   --border-color-primary: var(--gray);
   --border-color-secondary: var(--light-gray);
-  --selection-border-color: var(--off-blue);
   --text-color: var(--darkest-white);
   --text-color-accent: var(--white);
-  --text-color-muted: var(--light-gray-bright);
+  --text-color-muted-dark: var(--background-secondary);
+  --text-color-muted-light: var(--light-gray-bright);
   --accent-color-dark: var(--glacier);
   --accent-color-light: var(--teal);
   --accent-color-hover: var(--off-blue);
@@ -34,7 +34,6 @@
   --accent-s: 34%;
   --accent-l: 63%;
   --canvas-color: 129, 161, 193 !important;
-  --code-background: var(--dark-gray);
   --code-normal: var(--white);
   --code-comment: var(--light-gray-bright);
   --code-function: var(--color-blue);
@@ -46,6 +45,55 @@
   --code-string: var(--color-green);
   --code-tag: red;
   --code-value: var(--glacier);
+}
+
+.theme-dark.color-scheme-one-dark {
+  --black: #181a1f;
+  --darkest-gray: #21252b;
+  --bg0: #282c34;
+  --bg1: #31353f;
+  --bg2: #393f4a;
+  --bg3: #3b3f4c;
+  --bg-blue: #73b8f1;
+  --bg-yellow: #ebd09c;
+  --foreground: #abb2bf;
+  --grey: #5c6370;
+  --light-grey: #848b98;
+  --color-red: #e86671;
+  --color-orange: #d19a66;
+  --color-yellow: #e5c07b;
+  --color-green: #98c379;
+  --color-cyan: #56b6c2;
+  --color-blue: #61afef;
+  --color-purple: #c678dd;
+  --color-pink: pink;
+  --background-primary: var(--bg0);
+  --background-secondary: var(--darkest-gray);
+  --selection-background-color: var(--bg3);
+  --border-color-primary: var(--bg2);
+  --border-color-secondary: var(--bg1);
+  --text-color: var(--foreground);
+  --text-color-accent: white;
+  --text-color-muted-dark: var(--bg2);
+  --text-color-muted-light: var(--grey);
+  --accent-color-dark: var(--color-blue);
+  --accent-color-light: var(--color-cyan);
+  --accent-color-hover: var(--bg-blue);
+  --accent-h: 207;
+  --accent-s: 82%;
+  --accent-l: 66%;
+  --canvas-color: 97, 175, 239 !important;
+  --code-normal: var(--text-color);
+  --code-comment: var(--grey);
+  --code-function: var(--color-blue);
+  --code-important: var(--color-yellow);
+  --code-keyword: var(--color-purple);
+  --code-operator: var(--color-cyan);
+  --code-property: var(--text-color);
+  --code-punctuation: var(--text-color);
+  --code-string: var(--color-green);
+  --code-tag: red;
+  --code-value: var(--color-orange);
 }
 
 .theme-dark {
@@ -88,10 +136,11 @@
   --h4-color: var(--color-yellow);
   --h5-color: var(--color-orange);
   --h6-color: var(--color-red);
+  --inline-title-color: var(--text-color);
   --text-normal: var(--text-color);
   --text-muted: var(--text-color);
-  --checklist-done-color: var(--text-color-muted);
-  --text-faint: var(--text-color-muted);
+  --checklist-done-color: var(--text-color-muted-light);
+  --text-faint: var(--text-color-muted-light);
   --text-on-accent: var(--text-color-accent);
   --text-on-accent-inverted: var(--background-primary);
   --text-accent: var(--accent);
@@ -105,9 +154,10 @@
   --text-selection: var(--selection-background-color);
   --list-marker-color: var(--accent-color-dark);
   --blockquote-border-color: var(--accent-color-dark);
-  --hr-color: var(--background-secondary);
-  --indentation-guide-color: var(--background-secondary);
-  --indentation-guide-color-active: var(--border-color-primary);
+  --hr-color: var(--text-color-muted-dark);
+  --indentation-guide-color: var(--text-color-muted-dark);
+  --indentation-guide-color-active: var(--text-color-muted-light);
+  --selection-border-color: var(--accent-color-hover);
   --link-color: var(--accent-color-dark);
   --link-external-color: var(--accent-color-dark);
   --link-unresolved-color: var(--red);
@@ -119,7 +169,7 @@
   --nav-collapse-icon-color-collapsed: var(--border-color-secondary);
   --checkbox-color: var(--accent-color-dark);
   --checkbox-color-hover: var(--accent-color-hover);
-  --checkbox-border-color: var(--accent-color-dark);
+  --checkbox-border-color: var(--text-color-muted-light);
   --checkbox-border-color-hover: var(--accent-color-hover);
   --slider-track-background: var(--background-secondary);
   --slider-thumb-border-color: var(--black);
@@ -143,6 +193,7 @@
   --graph-node-focused: var(--accent-color-hover);
   --graph-node-tag: var(--accent-color-light);
   --graph-node-attachment: var(--accent-color-dark);
+  --code-background: var(--background-secondary);
 }
 
 /* @settings
@@ -162,6 +213,6 @@ settings:
                 label: Nord
                 value: color-scheme-nord
             -   
-                label: Solarized Light
-                value: color-scheme-solarized-light
+                label: One Dark
+                value: color-scheme-one-dark
 */

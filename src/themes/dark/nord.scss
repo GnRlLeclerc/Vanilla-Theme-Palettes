@@ -31,12 +31,12 @@
   // Border colors
   --border-color-primary: var(--gray);
   --border-color-secondary: var(--light-gray);
-  --selection-border-color: var(--off-blue);
 
   // Text colors
   --text-color: var(--darkest-white);
   --text-color-accent: var(--white);
-  --text-color-muted: var(--light-gray-bright);
+  --text-color-muted-dark: var(--background-secondary); // Separators, indent
+  --text-color-muted-light: var(--light-gray-bright); // Checklist done, indent
 
   // Main accent colors
   --accent-color-dark: var(--glacier);
@@ -50,9 +50,6 @@
   --canvas-color: 129, 161, 193 !important;
 
   // Code section theme
-
-  --code-background: var(--dark-gray);
-
   --code-normal: var(--white);
   --code-comment: var(--light-gray-bright);
   --code-function: var(--color-blue);

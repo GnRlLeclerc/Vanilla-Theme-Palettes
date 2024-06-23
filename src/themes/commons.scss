@@ -1,4 +1,5 @@
 @use "dark/nord.scss";
+@use "dark/oneDark.scss";
 
 .theme-dark {
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -59,12 +60,13 @@
   --h4-color: var(--color-yellow);
   --h5-color: var(--color-orange);
   --h6-color: var(--color-red);
+  --inline-title-color: var(--text-color);
 
   // Text
   --text-normal: var(--text-color);
   --text-muted: var(--text-color); // UI symbols
-  --checklist-done-color: var(--text-color-muted); // Actual muted text
-  --text-faint: var(--text-color-muted);
+  --checklist-done-color: var(--text-color-muted-light);
+  --text-faint: var(--text-color-muted-light);
   --text-on-accent: var(--text-color-accent);
   --text-on-accent-inverted: var(--background-primary);
   --text-accent: var(--accent);
@@ -82,9 +84,10 @@
   // Lists, blockquotes & other elements
   --list-marker-color: var(--accent-color-dark);
   --blockquote-border-color: var(--accent-color-dark);
-  --hr-color: var(--background-secondary); // Horizontal delimiter
-  --indentation-guide-color: var(--background-secondary);
-  --indentation-guide-color-active: var(--border-color-primary);
+  --hr-color: var(--text-color-muted-dark); // Horizontal delimiter
+  --indentation-guide-color: var(--text-color-muted-dark);
+  --indentation-guide-color-active: var(--text-color-muted-light);
+  --selection-border-color: var(--accent-color-hover);
 
   // Links
   --link-color: var(--accent-color-dark);
@@ -107,7 +110,7 @@
   // Checkbox colors
   --checkbox-color: var(--accent-color-dark);
   --checkbox-color-hover: var(--accent-color-hover);
-  --checkbox-border-color: var(--accent-color-dark);
+  --checkbox-border-color: var(--text-color-muted-light);
   --checkbox-border-color-hover: var(--accent-color-hover);
 
   // Sliders
@@ -147,6 +150,9 @@
   --graph-node-attachment: var(--accent-color-dark);
 
   // Search: inherits correct colors
+
+  // Code background
+  --code-background: var(--background-secondary);
 }
 
 // TODO : light schemes
