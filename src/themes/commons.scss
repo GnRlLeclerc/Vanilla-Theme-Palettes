@@ -1,5 +1,6 @@
 @use "dark/nord.scss";
 @use "dark/oneDark.scss";
+@use "dark/rosePineMoon.scss";
 
 .theme-dark {
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -128,8 +129,8 @@
   // Tags
   --tag-color: var(--accent-color-dark);
   --tag-color-hover: var(--accent-color-dark);
-  --tag-background: var(--background-secondary);
-  --tag-background-hover: var(--border-color-primary);
+  --tag-background: var(--text-color-muted-dark);
+  --tag-background-hover: var(--text-color-muted-light);
 
   // Toggles
   --toggle-thumb-color: var(--text-color-accent);

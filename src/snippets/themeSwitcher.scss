@@ -11,12 +11,26 @@ settings:
         description: Light Color Scheme picker
         type: class-select
         allowEmpty: false
+        default: color-scheme-rose-pine-dawn
+        options:
+            -
+                label: Rose Pine Dawn
+                value: color-scheme-rose-pine-dawn
+    -
+        id: color-schemes-dark
+        title: Dark Color Scheme
+        description: Dark Color Scheme picker
+        type: class-select
+        allowEmpty: false
         default: color-scheme-nord
         options:
             -
                 label: Nord
                 value: color-scheme-nord
             -   
-                label: One Dark
-                value: color-scheme-one-dark
+                label: Atom One Dark
+                value: color-scheme-atom-one-dark
+            -   
+                label: Rosé Pine Moon
+                value: color-scheme-rose-pine-moon
 */

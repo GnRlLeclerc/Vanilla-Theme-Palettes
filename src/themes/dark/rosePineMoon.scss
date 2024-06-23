@@ -1,0 +1,69 @@
+// Rosé Pine Moon color scheme
+.theme-dark.color-scheme-rose-pine-moon {
+  // Rosé Pine Moon color palette
+  --nc: #1f1d30;
+  --base: #232136;
+  --surface: #2a273f;
+  --overlay: #393552;
+  --muted: #6e6a86;
+  --subtle: #908caa;
+  --text: #e0def4;
+  --love: #eb6f92;
+  --gold: #f6c177;
+  --rose: #ea9a97;
+  --pine: #3e8fb0;
+  --foam: #9ccfd8;
+  --iris: #c4a7e7;
+  --highlight-low: #2a283e;
+  --highlight-med: #44415a;
+  --highlight-high: #56526e;
+
+  // Obsidian colors
+  --color-red: #eb6f92;
+  --color-orange: #ea9a97;
+  --color-yellow: #f6c177;
+  --color-green: #9ccfd8;
+  --color-cyan: #9ccfd8;
+  --color-blue: #3e8fb0;
+  --color-purple: #c4a7e7;
+  --color-pink: pink;
+
+  // Background colors
+  --background-primary: var(--base);
+  --background-secondary: var(--surface);
+  --selection-background-color: var(--overlay);
+
+  // Border colors
+  --border-color-primary: var(--highlight-med);
+  --border-color-secondary: var(--highlight-high);
+
+  // Text colors
+  --text-color: var(--text);
+  --text-color-accent: white;
+  --text-color-muted-dark: var(--overlay); // Separators, indent
+  --text-color-muted-light: var(--muted); // Checklist done, indent
+
+  // Main accent colors
+  --accent-color-dark: var(--pine);
+  --accent-color-light: var(--rose);
+  --accent-color-hover: var(--foam);
+
+  // Obsidian accent color HSL (pine)
+  --accent-h: 197;
+  --accent-s: 48%;
+  --accent-l: 47%;
+  --canvas-color: 62, 143, 176 !important;
+
+  // Code section theme
+  --code-normal: var(--text);
+  --code-comment: var(--muted);
+  --code-function: var(--pine);
+  --code-important: var(--color-yellow);
+  --code-keyword: var(--pine);
+  --code-operator: var(--pine);
+  --code-property: var(--text);
+  --code-punctuation: var(--text-color);
+  --code-string: var(--gold);
+  --code-tag: red;
+  --code-value: var(--rose);
+}

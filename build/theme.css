@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .theme-dark.color-scheme-nord {
   --black: #2e3440;
   --dark-gray: #3b4252;
@@ -47,7 +48,7 @@
   --code-value: var(--glacier);
 }
 
-.theme-dark.color-scheme-one-dark {
+.theme-dark.color-scheme-atom-one-dark {
   --black: #181a1f;
   --darkest-gray: #21252b;
   --bg0: #282c34;
@@ -94,6 +95,60 @@
   --code-string: var(--color-green);
   --code-tag: red;
   --code-value: var(--color-orange);
+}
+
+.theme-dark.color-scheme-rose-pine-moon {
+  --nc: #1f1d30;
+  --base: #232136;
+  --surface: #2a273f;
+  --overlay: #393552;
+  --muted: #6e6a86;
+  --subtle: #908caa;
+  --text: #e0def4;
+  --love: #eb6f92;
+  --gold: #f6c177;
+  --rose: #ea9a97;
+  --pine: #3e8fb0;
+  --foam: #9ccfd8;
+  --iris: #c4a7e7;
+  --highlight-low: #2a283e;
+  --highlight-med: #44415a;
+  --highlight-high: #56526e;
+  --color-red: #eb6f92;
+  --color-orange: #ea9a97;
+  --color-yellow: #f6c177;
+  --color-green: #9ccfd8;
+  --color-cyan: #9ccfd8;
+  --color-blue: #3e8fb0;
+  --color-purple: #c4a7e7;
+  --color-pink: pink;
+  --background-primary: var(--base);
+  --background-secondary: var(--surface);
+  --selection-background-color: var(--overlay);
+  --border-color-primary: var(--highlight-med);
+  --border-color-secondary: var(--highlight-high);
+  --text-color: var(--text);
+  --text-color-accent: white;
+  --text-color-muted-dark: var(--overlay);
+  --text-color-muted-light: var(--muted);
+  --accent-color-dark: var(--pine);
+  --accent-color-light: var(--rose);
+  --accent-color-hover: var(--foam);
+  --accent-h: 197;
+  --accent-s: 48%;
+  --accent-l: 47%;
+  --canvas-color: 62, 143, 176 !important;
+  --code-normal: var(--text);
+  --code-comment: var(--muted);
+  --code-function: var(--pine);
+  --code-important: var(--color-yellow);
+  --code-keyword: var(--pine);
+  --code-operator: var(--pine);
+  --code-property: var(--text);
+  --code-punctuation: var(--text-color);
+  --code-string: var(--gold);
+  --code-tag: red;
+  --code-value: var(--rose);
 }
 
 .theme-dark {
@@ -181,8 +236,8 @@
   --table-drag-handle-color-active: var(--selection-background-color);
   --tag-color: var(--accent-color-dark);
   --tag-color-hover: var(--accent-color-dark);
-  --tag-background: var(--background-secondary);
-  --tag-background-hover: var(--border-color-primary);
+  --tag-background: var(--text-color-muted-dark);
+  --tag-background-hover: var(--text-color-muted-light);
   --toggle-thumb-color: var(--text-color-accent);
   --metadata-label-text-color: var(--text-color);
   --metadata-input-text-color: var(--text-color);
@@ -207,12 +262,26 @@ settings:
         description: Light Color Scheme picker
         type: class-select
         allowEmpty: false
+        default: color-scheme-rose-pine-dawn
+        options:
+            -
+                label: Rose Pine Dawn
+                value: color-scheme-rose-pine-dawn
+    -
+        id: color-schemes-dark
+        title: Dark Color Scheme
+        description: Dark Color Scheme picker
+        type: class-select
+        allowEmpty: false
         default: color-scheme-nord
         options:
             -
                 label: Nord
                 value: color-scheme-nord
             -   
-                label: One Dark
-                value: color-scheme-one-dark
+                label: Atom One Dark
+                value: color-scheme-atom-one-dark
+            -   
+                label: Rosé Pine Moon
+                value: color-scheme-rose-pine-moon
 */
