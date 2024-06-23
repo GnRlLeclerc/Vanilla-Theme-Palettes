@@ -1,0 +1,72 @@
+// Rosé Pine Dawn color scheme
+.theme-light.color-scheme-rose-pine-dawn {
+  // Rosé Pine Dawn color palette
+  --nc: #f8f0e7;
+  --base: #faf4ed;
+  --surface: #fffaf3;
+  --overlay: #f2e9e1;
+  --muted: #9893a5;
+  --subtle: #797593;
+  --text: #575279;
+  --love: #b4637a;
+  --gold: #ea9d34;
+  --rose: #d7827e;
+  --pine: #286983;
+  --foam: #56949f;
+  --iris: #907aa9;
+  --highlight-low: #f4ede8;
+  --highlight-med: #dfdad9;
+  --highlight-high: #cecacd;
+
+  // Obsidian colors
+  --color-red: var(--love);
+  --color-orange: var(--rose);
+  --color-yellow: var(--gold);
+  --color-green: var(--foam);
+  --color-cyan: var(--foam);
+  --color-blue: var(--pine);
+  --color-purple: var(--iris);
+  --color-pink: pink;
+
+  // Background colors
+  --background-primary: var(--base);
+  --background-secondary: var(--surface);
+  --selection-background-color: var(--overlay);
+
+  // Border colors
+  --border-color-primary: var(--highlight-med);
+  --border-color-secondary: var(--highlight-high);
+
+  // Text colors
+  --text-color: var(--text);
+  --text-color-accent: var(--text);
+  --text-color-muted-dark: var(--overlay); // Separators, indent
+  --text-color-muted-light: var(--muted); // Checklist done, indent
+
+  // Main accent colors
+  // For light themes, dark & light are swapped
+  // TODO: fix this by separating dark & light configs in the commons
+  // TODO: improve code colorization
+  --accent-color-dark: var(--rose);
+  --accent-color-light: var(--pine);
+  --accent-color-hover: var(--foam);
+
+  // Obsidian accent color HSL (pine)
+  --accent-h: 3;
+  --accent-s: 53%;
+  --accent-l: 67%;
+  --canvas-color: 215, 130, 126 !important;
+
+  // Code section theme
+  --code-normal: var(--text);
+  --code-comment: var(--muted);
+  --code-function: var(--pine);
+  --code-important: var(--color-yellow);
+  --code-keyword: var(--pine);
+  --code-operator: var(--pine);
+  --code-property: var(--text);
+  --code-punctuation: var(--text-color);
+  --code-string: var(--gold);
+  --code-tag: red;
+  --code-value: var(--rose);
+}
