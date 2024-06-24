@@ -6,8 +6,6 @@
 // Light themes
 @use "light/rosePineDawn.scss";
 
-// TODO : faire rose pine dawn. Regarder si ya une diff au niveau de certains trucs genre les bordures.
-// peut-être qu'il faudra faire qqch
 .theme-light,
 .theme-dark {
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -161,4 +159,56 @@
 
   // Code background
   --code-background: var(--background-secondary);
+}
+
+// Code section detailed theme
+
+// Default code block: parentheses, brackets, braces
+.cm-hmd-codeblock {
+  color: var(--code-parentheses);
+}
+
+.cm-atom {
+  color: var(--code-boolean);
+}
+
+.cm-builtin {
+  color: var(--code-builtin);
+  font-style: italic;
+}
+
+.cm-comment {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+// Class / function / variable name definition
+.cm-def {
+  color: var(--code-definition);
+}
+
+.cm-keyword {
+  color: var(--code-keyword);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.cm-number {
+  color: var(--code-value);
+}
+
+.cm-operator {
+  color: var(--code-operator);
+}
+
+.cm-property {
+  color: var(--code-property);
+}
+
+.cm-string {
+  color: var(--code-string);
+}
+
+.cm-variable {
+  color: var(--code-variable);
 }

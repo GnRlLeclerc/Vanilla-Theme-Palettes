@@ -55,15 +55,18 @@
   --canvas-color: 62, 143, 176 !important;
 
   // Code section theme
-  --code-normal: var(--text);
-  --code-comment: var(--muted);
-  --code-function: var(--pine);
   --code-important: var(--color-yellow);
+
+  // NOTE: this is a mix of VSCode and Neovim themes
+  --code-boolean: var(--rose);
+  --code-builtin: var(--love);
+  --code-comment: var(--muted);
+  --code-definition: var(--rose);
   --code-keyword: var(--pine);
   --code-operator: var(--pine);
-  --code-property: var(--text);
-  --code-punctuation: var(--text-color);
+  --code-property: var(--foam);
+  --code-parentheses: var(--subtle);
   --code-string: var(--gold);
-  --code-tag: red;
   --code-value: var(--rose);
+  --code-variable: var(--text);
 }
