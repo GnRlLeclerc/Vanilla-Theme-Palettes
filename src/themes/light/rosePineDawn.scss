@@ -45,10 +45,8 @@
 
   // Main accent colors
   // For light themes, dark & light are swapped
-  // TODO: fix this by separating dark & light configs in the commons
-  // TODO: improve code colorization
-  --accent-color-dark: var(--rose);
-  --accent-color-light: var(--pine);
+  --accent-color-dark: var(--pine);
+  --accent-color-light: var(--rose);
   --accent-color-hover: var(--iris);
 
   // Obsidian accent color HSL (pine)
@@ -58,15 +56,18 @@
   --canvas-color: 215, 130, 126 !important;
 
   // Code section theme
-  --code-normal: var(--text);
-  --code-comment: var(--muted);
-  --code-function: var(--pine);
   --code-important: var(--color-yellow);
+
+  // NOTE: this is a mix of VSCode and Neovim themes
+  --code-boolean: var(--rose);
+  --code-builtin: var(--love);
+  --code-comment: var(--muted);
+  --code-definition: var(--rose);
   --code-keyword: var(--pine);
   --code-operator: var(--pine);
-  --code-property: var(--text);
-  --code-punctuation: var(--text-color);
+  --code-property: var(--foam);
+  --code-parentheses: var(--subtle);
   --code-string: var(--gold);
-  --code-tag: red;
   --code-value: var(--rose);
+  --code-variable: var(--text);
 }

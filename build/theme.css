@@ -35,17 +35,18 @@
   --accent-s: 34%;
   --accent-l: 63%;
   --canvas-color: 129, 161, 193 !important;
-  --code-normal: var(--white);
-  --code-comment: var(--light-gray-bright);
-  --code-function: var(--color-blue);
   --code-important: var(--color-yellow);
-  --code-keyword: var(--color-cyan);
+  --code-boolean: var(--glacier);
+  --code-builtin: var(--off-blue);
+  --code-comment: var(--light-gray-bright);
+  --code-definition: var(--off-blue);
+  --code-keyword: var(--glacier);
   --code-operator: var(--glacier);
-  --code-property: var(--white);
-  --code-punctuation: var(--text-color);
+  --code-property: var(--off-blue);
+  --code-parentheses: var(--teal);
   --code-string: var(--color-green);
-  --code-tag: red;
-  --code-value: var(--glacier);
+  --code-value: var(--color-purple);
+  --code-variable: var(--text-color);
 }
 
 .theme-dark.color-scheme-atom-one-dark {
@@ -84,17 +85,18 @@
   --accent-s: 82%;
   --accent-l: 66%;
   --canvas-color: 97, 175, 239 !important;
-  --code-normal: var(--text-color);
-  --code-comment: var(--grey);
-  --code-function: var(--color-blue);
   --code-important: var(--color-yellow);
+  --code-boolean: var(--color-orange);
+  --code-builtin: var(--color-cyan);
+  --code-comment: var(--grey);
+  --code-definition: var(--color-blue);
   --code-keyword: var(--color-purple);
   --code-operator: var(--color-cyan);
-  --code-property: var(--text-color);
-  --code-punctuation: var(--text-color);
+  --code-property: var(--color-cyan);
+  --code-parentheses: var(--light-grey);
   --code-string: var(--color-green);
-  --code-tag: red;
   --code-value: var(--color-orange);
+  --code-variable: var(--text-color);
 }
 
 .theme-dark.color-scheme-rose-pine-moon {
@@ -138,17 +140,18 @@
   --accent-s: 48%;
   --accent-l: 47%;
   --canvas-color: 62, 143, 176 !important;
-  --code-normal: var(--text);
-  --code-comment: var(--muted);
-  --code-function: var(--pine);
   --code-important: var(--color-yellow);
+  --code-boolean: var(--rose);
+  --code-builtin: var(--love);
+  --code-comment: var(--muted);
+  --code-definition: var(--rose);
   --code-keyword: var(--pine);
   --code-operator: var(--pine);
-  --code-property: var(--text);
-  --code-punctuation: var(--text-color);
+  --code-property: var(--foam);
+  --code-parentheses: var(--subtle);
   --code-string: var(--gold);
-  --code-tag: red;
   --code-value: var(--rose);
+  --code-variable: var(--text);
 }
 
 .theme-light.color-scheme-rose-pine-dawn {
@@ -185,24 +188,25 @@
   --text-color-accent: var(--text);
   --text-color-muted-dark: var(--overlay);
   --text-color-muted-light: var(--muted);
-  --accent-color-dark: var(--rose);
-  --accent-color-light: var(--pine);
+  --accent-color-dark: var(--pine);
+  --accent-color-light: var(--rose);
   --accent-color-hover: var(--iris);
   --accent-h: 3;
   --accent-s: 53%;
   --accent-l: 67%;
   --canvas-color: 215, 130, 126 !important;
-  --code-normal: var(--text);
-  --code-comment: var(--muted);
-  --code-function: var(--pine);
   --code-important: var(--color-yellow);
+  --code-boolean: var(--rose);
+  --code-builtin: var(--love);
+  --code-comment: var(--muted);
+  --code-definition: var(--rose);
   --code-keyword: var(--pine);
   --code-operator: var(--pine);
-  --code-property: var(--text);
-  --code-punctuation: var(--text-color);
+  --code-property: var(--foam);
+  --code-parentheses: var(--subtle);
   --code-string: var(--gold);
-  --code-tag: red;
   --code-value: var(--rose);
+  --code-variable: var(--text);
 }
 
 .theme-light,
@@ -306,6 +310,54 @@
   --code-background: var(--background-secondary);
 }
 
+.cm-hmd-codeblock {
+  color: var(--code-parentheses);
+}
+
+.cm-atom {
+  color: var(--code-boolean);
+}
+
+.cm-builtin {
+  color: var(--code-builtin);
+  font-style: italic;
+}
+
+.cm-comment {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+.cm-def {
+  color: var(--code-definition);
+}
+
+.cm-keyword {
+  color: var(--code-keyword);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.cm-number {
+  color: var(--code-value);
+}
+
+.cm-operator {
+  color: var(--code-operator);
+}
+
+.cm-property {
+  color: var(--code-property);
+}
+
+.cm-string {
+  color: var(--code-string);
+}
+
+.cm-variable {
+  color: var(--code-variable);
+}
+
 /* @settings
 
 name: Chameleon Theme
@@ -320,7 +372,7 @@ settings:
         default: color-scheme-rose-pine-dawn
         options:
             -
-                label: Rose Pine Dawn
+                label: Rosé Pine Dawn
                 value: color-scheme-rose-pine-dawn
     -
         id: color-schemes-dark
@@ -330,12 +382,12 @@ settings:
         allowEmpty: false
         default: color-scheme-nord
         options:
-            -
-                label: Nord
-                value: color-scheme-nord
             -   
                 label: Atom One Dark
                 value: color-scheme-atom-one-dark
+            -
+                label: Nord
+                value: color-scheme-nord
             -   
                 label: Rosé Pine Moon
                 value: color-scheme-rose-pine-moon

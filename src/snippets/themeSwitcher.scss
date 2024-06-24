@@ -14,7 +14,7 @@ settings:
         default: color-scheme-rose-pine-dawn
         options:
             -
-                label: Rose Pine Dawn
+                label: Rosé Pine Dawn
                 value: color-scheme-rose-pine-dawn
     -
         id: color-schemes-dark
@@ -24,12 +24,12 @@ settings:
         allowEmpty: false
         default: color-scheme-nord
         options:
-            -
-                label: Nord
-                value: color-scheme-nord
             -   
                 label: Atom One Dark
                 value: color-scheme-atom-one-dark
+            -
+                label: Nord
+                value: color-scheme-nord
             -   
                 label: Rosé Pine Moon
                 value: color-scheme-rose-pine-moon
