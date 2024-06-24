@@ -99,6 +99,61 @@
   --code-variable: var(--text-color);
 }
 
+.theme-dark.color-scheme-rose-pine {
+  --nc: #16141f;
+  --base: #191724;
+  --surface: #1f1d2e;
+  --overlay: #26233a;
+  --muted: #6e6a86;
+  --subtle: #908caa;
+  --text: #e0def4;
+  --love: #eb6f92;
+  --gold: #f6c177;
+  --rose: #ebbcba;
+  --pine: #31748f;
+  --foam: #9ccfd8;
+  --iris: #c4a7e7;
+  --highlight-low: #21202e;
+  --highlight-med: #403d52;
+  --highlight-high: #524f67;
+  --color-red: #eb6f92;
+  --color-orange: #ebbcba;
+  --color-yellow: #f6c177;
+  --color-green: #9ccfd8;
+  --color-cyan: #9ccfd8;
+  --color-blue: #31748f;
+  --color-purple: #c4a7e7;
+  --color-pink: pink;
+  --background-primary: var(--base);
+  --background-secondary: var(--surface);
+  --selection-background-color: var(--overlay);
+  --border-color-primary: var(--highlight-med);
+  --border-color-secondary: var(--highlight-high);
+  --text-color: var(--text);
+  --text-color-accent: white;
+  --text-color-muted-dark: var(--overlay);
+  --text-color-muted-light: var(--muted);
+  --accent-color-dark: var(--pine);
+  --accent-color-light: var(--rose);
+  --accent-color-hover: var(--foam);
+  --accent-h: 197;
+  --accent-s: 49%;
+  --accent-l: 38%;
+  --canvas-color: 49, 116, 143 !important;
+  --code-important: var(--color-yellow);
+  --code-boolean: var(--rose);
+  --code-builtin: var(--love);
+  --code-comment: var(--muted);
+  --code-definition: var(--rose);
+  --code-keyword: var(--pine);
+  --code-operator: var(--pine);
+  --code-property: var(--foam);
+  --code-parentheses: var(--subtle);
+  --code-string: var(--gold);
+  --code-value: var(--rose);
+  --code-variable: var(--text);
+}
+
 .theme-dark.color-scheme-rose-pine-moon {
   --nc: #1f1d30;
   --base: #232136;
@@ -388,6 +443,9 @@ settings:
             -
                 label: Nord
                 value: color-scheme-nord
+            -   
+                label: Rosé Pine
+                value: color-scheme-rose-pine            
             -   
                 label: Rosé Pine Moon
                 value: color-scheme-rose-pine-moon
