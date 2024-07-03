@@ -87,8 +87,8 @@
   --background-primary: var(--base);
   --background-secondary: var(--crust);
   --selection-background-color: var(--surface1);
-  --border-color-primary: var(--surface0);
-  --border-color-secondary: var(--base);
+  --border-color-primary: var(--surface1);
+  --border-color-secondary: var(--surface0);
   --text-color: var(--text);
   --text-color-accent: white;
   --text-color-muted-dark: var(--surface0);
@@ -152,8 +152,8 @@
   --background-primary: var(--base);
   --background-secondary: var(--crust);
   --selection-background-color: var(--surface1);
-  --border-color-primary: var(--surface0);
-  --border-color-secondary: var(--base);
+  --border-color-primary: var(--surface1);
+  --border-color-secondary: var(--surface0);
   --text-color: var(--text);
   --text-color-accent: white;
   --text-color-muted-dark: var(--surface0);
@@ -217,8 +217,8 @@
   --background-primary: var(--base);
   --background-secondary: var(--crust);
   --selection-background-color: var(--surface1);
-  --border-color-primary: var(--surface0);
-  --border-color-secondary: var(--base);
+  --border-color-primary: var(--surface1);
+  --border-color-secondary: var(--surface0);
   --text-color: var(--text);
   --text-color-accent: white;
   --text-color-muted-dark: var(--surface0);
