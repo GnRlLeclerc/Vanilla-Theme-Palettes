@@ -1,35 +1,35 @@
-// Tokyo Night Moon color scheme
-.theme-dark.color-scheme-tokyo-night-moon {
-  // Tokyo Night Moon color palette
-  --bg: #222436;
-  --bg-dark: #1e2030;
-  --bg-highlight: #2f334d;
-  --blue: #82aaff;
-  --blue0: #3e68d7;
-  --blue1: #65bcff;
+// Tokyo Night Storm color scheme
+.theme-dark.color-scheme-tokyo-night-storm {
+  // Tokyo Night storm color palette
+  --bg: #24283b;
+  --bg-dark: #1f2335;
+  --bg-highlight: #363a4a; // Lightened from the nvim source
+  --blue: #7aa2f7;
+  --blue0: #3d59a1;
+  --blue1: #2ac3de;
   --blue2: #0db9d7;
   --blue5: #89ddff;
   --blue6: #b4f9f8;
   --blue7: #394b70;
-  --comment: #636da6;
-  --cyan: #86e1fc;
+  --comment: #565f89;
+  --cyan: #7dcfff;
   --dark3: #545c7e;
   --dark5: #737aa2;
-  --fg: #c8d3f5;
-  --fg-dark: #828bb8;
+  --fg: #c0caf5;
+  --fg-dark: #a9b1d6;
   --fg-gutter: #3b4261;
-  --green: #c3e88d;
-  --green1: #4fd6be;
+  --green: #9ece6a;
+  --green1: #73daca;
   --green2: #41a6b5;
-  --magenta: #c099ff;
+  --magenta: #bb9af7;
   --magenta2: #ff007c;
-  --orange: #ff966c;
-  --purple: #fca7ea;
-  --red: #ff757f;
-  --red1: #c53b53;
-  --teal: #4fd6be;
-  --terminal-black: #444a73;
-  --yellow: #ffc777;
+  --orange: #ff9e64;
+  --purple: #9d7cd8;
+  --red: #f7768e;
+  --red1: #db4b4b;
+  --teal: #1abc9c;
+  --terminal-black: #414868;
+  --yellow: #e0af68;
 
   // Obsidian colors
   --color-red: var(--red);
@@ -57,15 +57,15 @@
   --text-color-muted-light: var(--fg-dark); // Checklist done, indent
 
   // Main accent colors
-  --accent-color-dark: var(--magenta);
+  --accent-color-dark: var(--purple);
   --accent-color-light: var(--blue);
-  --accent-color-hover: var(--purple);
+  --accent-color-hover: var(--magenta);
 
   // Obsidian accent color HSL (magenta)
-  --accent-h: 263;
-  --accent-s: 100%;
-  --accent-l: 80%;
-  --canvas-color: 192, 153, 255 !important;
+  --accent-h: 261;
+  --accent-s: 85%;
+  --accent-l: 79%;
+  --canvas-color: 187, 154, 247 !important;
 
   // Code section theme
   --code-important: var(--color-yellow);
