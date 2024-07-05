@@ -13,6 +13,7 @@
 
 // Light themes
 @use "light/catppuccinLatte.scss";
+@use "light/horizonBright.scss";
 @use "light/rosePineDawn.scss";
 @use "light/tokyoNightDay.scss";
 
@@ -59,7 +60,6 @@
   --tab-background-active: var(--background-primary);
   --tab-text-color-focused: var(--text-color);
   --tab-text-color-focused-active: var(--text-color);
-  --tab-text-color-focused-active-current: var(--text-color-accent);
   --tab-divider-color: var(--selection-background-color);
   --tab-outline-color: var(--border-color-primary);
   --tab-text-color: var(--border-color-primary);
@@ -171,6 +171,14 @@
   --code-background: var(--background-secondary);
 }
 
+.theme-light.workspace-tab-header-inner-title {
+  --tab-text-color-focused-active-current: var(--text-color);
+}
+
+.theme-dark {
+  --tab-text-color-focused-active-current: var(--text-color-accent);
+}
+
 // Code section detailed theme
 
 // Default code block: parentheses, brackets, braces
@@ -180,6 +188,7 @@
 
 .cm-atom {
   color: var(--code-boolean);
+  font-weight: bold;
 }
 
 .cm-builtin {
