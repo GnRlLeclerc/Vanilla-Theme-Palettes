@@ -1,13 +1,28 @@
-# Obsidian Chameleon Theme
+# 🎨 Obsidian Vanilla Theme Palettes
 
-A simple color palette switcher for obsidian.
-It aims at keeping the per-theme configuration very simple, in order to easily support multiple themes and to avoid getting lost in pointless configuration details.
+A simple theme color palette switcher for Obsidian for theme hoppers.
+It includes many popular themes without changing the vanilla interface.
+
+The [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin is required in order to switch themes.
+
+![Theme illustration](./vanilla%20theme%20palettes.png)
+
+Featured themes:
+
+- Atom One Dark
+- Catppuccin
+- Dracula
+- Gruvbox
+- Horizon
+- Kanagawa
+- Nord
+- Rose Pine
+- Tokyo Night
 
 ## Project Overview
 
 ```
 ├── src       # SCSS source folder
-│   ├── custom    # Obsidian theme customization
 │   ├── snippets  # Style Settings extension snippets
 │   └── themes    # Color Themes
 ```
@@ -24,5 +39,6 @@ See the [`themes/`](./src/themes) folder for existing themes. They all follow th
 Build with the following command:
 
 ```bash
+npm install -g sass
 sass src:. --no-source-map --watch
 ```
