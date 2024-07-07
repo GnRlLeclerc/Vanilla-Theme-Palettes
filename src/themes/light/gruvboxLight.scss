@@ -1,5 +1,5 @@
-// Gruvbox Dark color scheme
-.theme-dark {
+// Gruvbox Light color scheme
+.theme-light {
   &.color-scheme-gruvbox-soft,
   &.color-scheme-gruvbox-medium,
   &.color-scheme-gruvbox-hard {
@@ -62,7 +62,7 @@
     --gray: #928374;
 
     // Background colors
-    --selection-background-color: var(--dark3);
+    --selection-background-color: var(--light3);
 
     // Obsidian colors
     --color-red: var(--neutral-red);
@@ -75,7 +75,7 @@
     --color-pink: pink;
 
     // Text colors
-    --text-color: var(--light1);
+    --text-color: var(--dark1);
     --text-color-accent: white;
 
     // Main accent colors
@@ -93,64 +93,64 @@
     --code-important: var(--color-yellow);
 
     // NOTE: this is a mix of VSCode and Neovim themes
-    --code-boolean: var(--bright-purple);
-    --code-builtin: var(--bright-orange);
+    --code-boolean: var(--faded-purple);
+    --code-builtin: var(--faded-orange);
     --code-comment: var(var(--gray));
-    --code-definition: var(--light1);
-    --code-keyword: var(--bright-red);
-    --code-operator: var(--bright-orange);
-    --code-property: var(--bright-green);
-    --code-parentheses: var(--bright-orange);
-    --code-string: var(--bright-green);
-    --code-value: var(--bright-purple);
-    --code-variable: var(--bright-blue);
+    --code-definition: var(--dark1);
+    --code-keyword: var(--faded-red);
+    --code-operator: var(--faded-orange);
+    --code-property: var(--faded-green);
+    --code-parentheses: var(--faded-orange);
+    --code-string: var(--faded-green);
+    --code-value: var(--faded-purple);
+    --code-variable: var(--faded-blue);
   }
 
   &.color-scheme-gruvbox-soft {
     // Soft contrast
 
     // Background colors
-    --background-primary: var(--dark0-soft);
-    --background-secondary: var(--dark1);
+    --background-primary: var(--light0-soft);
+    --background-secondary: var(--light1);
 
     // Border colors
-    --border-color-primary: var(--dark3);
-    --border-color-secondary: var(--dark4);
+    --border-color-primary: var(--light3);
+    --border-color-secondary: var(--light4);
 
     // Text colors
-    --text-color-muted-dark: var(--dark3); // Separators, indent
-    --text-color-muted-light: var(--dark4); // Checklist done, indent
+    --text-color-muted-dark: var(--light3); // Separators, indent
+    --text-color-muted-light: var(--light4); // Checklist done, indent
   }
 
   &.color-scheme-gruvbox-medium {
     // Medium contrast
 
     // Background colors
-    --background-primary: var(--dark0);
-    --background-secondary: var(--dark0-soft);
+    --background-primary: var(--light0);
+    --background-secondary: var(--light0-soft);
 
     // Border colors
-    --border-color-primary: var(--dark2);
-    --border-color-secondary: var(--dark3);
+    --border-color-primary: var(--light2);
+    --border-color-secondary: var(--light3);
 
     // Text colors
-    --text-color-muted-dark: var(--dark2); // Separators, indent
-    --text-color-muted-light: var(--dark3); // Checklist done, indent
+    --text-color-muted-dark: var(--light2); // Separators, indent
+    --text-color-muted-light: var(--light3); // Checklist done, indent
   }
 
   &.color-scheme-gruvbox-hard {
     // Hard contrast
 
     // Background colors
-    --background-primary: var(--dark0-hard);
-    --background-secondary: var(--dark0);
+    --background-primary: var(--light0-hard);
+    --background-secondary: var(--light0);
 
     // Border colors
-    --border-color-primary: var(--dark1);
-    --border-color-secondary: var(--dark2);
+    --border-color-primary: var(--light1);
+    --border-color-secondary: var(--light2);
 
     // Text colors
-    --text-color-muted-dark: var(--dark1); // Separators, indent
-    --text-color-muted-light: var(--dark2); // Checklist done, indent
+    --text-color-muted-dark: var(--light1); // Separators, indent
+    --text-color-muted-light: var(--light2); // Checklist done, indent
   }
 }
